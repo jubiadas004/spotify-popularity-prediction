@@ -1,5 +1,3 @@
-# spotify-popularity-prediction
-
 # Predicting Spotify Track Popularity
 
 A machine learning project that predicts whether a Spotify track is *popular* based on
