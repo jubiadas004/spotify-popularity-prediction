@@ -68,8 +68,8 @@ predictors — popularity is driven largely by the artist rather than the indivi
 
 ## Team
 
-- [Your Name]
-- [Teammate Name]
+- James Ubiadas
+- Ava Saltzman
 
 **Faculty Mentor:** Dr. Doina Bein, CSU Fullerton
 
