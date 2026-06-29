@@ -37,15 +37,20 @@ a track's features predict that label, and to understand *which* features matter
 
 ## Results
 
-> _Fill in once you have your numbers:_
-
 | Model | Accuracy | Precision | Recall | ROC-AUC | Avg Precision |
 |-------|----------|-----------|--------|---------|---------------|
-| Logistic Regression | _[ ]_ | _[ ]_ | _[ ]_ | _[ ]_ | _[ ]_ |
-| Random Forest | _[ ]_ | _[ ]_ | _[ ]_ | _[ ]_ | _[ ]_ |
+| Logistic Regression | 0.689 | 0.592 | 0.576 | 0.769 | 0.620 |
+| Random Forest | **0.739** | **0.663** | **0.630** | **0.816** | **0.699** |
 
-**Key finding:** _[e.g., artist_popularity and artist_followers were the strongest
-predictors — popularity is driven largely by the artist rather than the individual track.]_
+The **Random Forest** was the stronger model across every metric, reaching a ROC-AUC of
+0.816 on the held-out test set.
+
+**Key finding:** The most important predictors were `artist_followers` and
+`artist_popularity`, followed by `track_duration_min`. In other words, a track's
+popularity is driven largely by how established the artist already is, rather than by
+properties of the individual track. Because the dataset contains no audio features
+(e.g. tempo, danceability), there is a natural ceiling on how well track-level popularity
+can be predicted from this data alone.
 
 ## How to Run
 
@@ -61,9 +66,9 @@ predictors — popularity is driven largely by the artist rather than the indivi
 
 ```
 .
-├── spotify_data_clean.csv     # dataset
-├── spotify_popularity.ipynb   # analysis notebook
-└── README.md                  # this file
+├── spotify_data_clean.csv       # dataset
+├── spotify_data_science.ipynb   # analysis notebook
+└── README.md                    # this file
 ```
 
 ## Team
